@@ -1,0 +1,6 @@
+language: bash
+before_install: makedir ~/.config/fish
+install: install.sh
+script: 
+- ls ~/.config/fish
+[ -f ~/.config/fish/rename.fish ] && echo "success"
